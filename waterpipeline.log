@@ -1,0 +1,36 @@
+
+2020-10-05 12:55:58 INFO  InitDBService:74 - Parsing data from csv files
+2020-10-05 12:55:58 INFO  InitDBService:74 - Parsing data from csv files
+2020-10-05 12:55:58 INFO  InitDBService:74 - Parsing data from csv files
+2020-10-05 12:55:59 INFO  InitDBService:91 - Create locations in location table
+2020-10-05 12:55:59 INFO  InitDBService:91 - Create locations in location table
+2020-10-05 12:55:59 INFO  InitDBService:91 - Create locations in location table
+2020-10-05 12:55:59 INFO  InitDBService:91 - Create locations in location table
+2020-10-05 12:55:59 INFO  InitDBService:91 - Create locations in location table
+2020-10-05 12:55:59 INFO  InitDBService:91 - Create locations in location table
+2020-10-05 12:55:59 INFO  InitDBService:91 - Create locations in location table
+2020-10-05 12:55:59 INFO  InitDBService:110 - Create connections in connection table
+2020-10-05 12:55:59 INFO  InitDBService:110 - Create connections in connection table
+2020-10-05 12:55:59 INFO  InitDBService:110 - Create connections in connection table
+2020-10-05 12:55:59 INFO  InitDBService:110 - Create connections in connection table
+2020-10-05 12:55:59 INFO  InitDBService:110 - Create connections in connection table
+2020-10-05 12:55:59 INFO  InitDBService:127 - Create problems in problem table
+2020-10-05 12:55:59 INFO  InitDBService:80 - Insert data from csv files to dataBase
+2020-10-05 12:56:53 INFO  InitDBService:74 - Parsing data from csv files
+2020-10-05 12:56:53 INFO  InitDBService:74 - Parsing data from csv files
+2020-10-05 12:56:53 INFO  InitDBService:74 - Parsing data from csv files
+2020-10-05 12:56:53 INFO  InitDBService:91 - Create locations in location table
+2020-10-05 12:56:53 INFO  InitDBService:91 - Create locations in location table
+2020-10-05 12:56:53 INFO  InitDBService:91 - Create locations in location table
+2020-10-05 12:56:53 INFO  InitDBService:91 - Create locations in location table
+2020-10-05 12:56:53 INFO  InitDBService:91 - Create locations in location table
+2020-10-05 12:56:53 INFO  InitDBService:91 - Create locations in location table
+2020-10-05 12:56:53 INFO  InitDBService:91 - Create locations in location table
+2020-10-05 12:56:53 INFO  InitDBService:110 - Create connections in connection table
+2020-10-05 12:56:53 INFO  InitDBService:110 - Create connections in connection table
+2020-10-05 12:56:53 INFO  InitDBService:110 - Create connections in connection table
+2020-10-05 12:56:53 INFO  InitDBService:110 - Create connections in connection table
+2020-10-05 12:56:53 INFO  InitDBService:110 - Create connections in connection table
+2020-10-05 12:56:53 INFO  InitDBService:127 - Create problems in problem table
+2020-10-05 12:56:53 INFO  InitDBService:80 - Insert data from csv files to dataBase
+2020-10-05 12:56:54 INFO  PathfinderServiceImpl:87 - Create solutions of problems!
