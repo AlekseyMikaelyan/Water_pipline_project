@@ -11,11 +11,14 @@ import com.example.waterpipelinesystemproject.repository.LocationRepository;
 import com.example.waterpipelinesystemproject.repository.SubProblemRepository;
 import com.example.waterpipelinesystemproject.repository.SolutionRepository;
 import com.example.waterpipelinesystemproject.service.interfaces.PathfinderService;
+import com.opencsv.CSVWriter;
 import org.apache.log4j.Logger;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
 import javax.annotation.PostConstruct;
+import java.io.FileWriter;
+import java.io.IOException;
 import java.sql.Types;
 import java.util.*;
 
@@ -86,6 +89,27 @@ public class PathfinderServiceImpl implements PathfinderService {
             }
             solutionRepository.create(solution);
             logger.info("Create solutions of problems!");
+
+            createCSVFile();
+        }
+    }
+
+    public void createCSVFile() {
+        List<Solution> solutionList = solutionRepository.findAll();
+        String csv = "solutions.csv";
+        try (CSVWriter writer = new CSVWriter(new FileWriter(csv))) {
+
+            String[] header = "ROUTE EXISTS,MIN LENGTH".split(",");
+
+            writer.writeNext(header);
+
+            for (int i = 0; i < solutionList.size(); i++) {
+                String[] data  = ("True" + "," + solutionList.get(i).getCost()).split(",");
+                writer.writeNext(data);
+            }
+
+        } catch (IOException e) {
+            e.printStackTrace();
         }
     }
 }
