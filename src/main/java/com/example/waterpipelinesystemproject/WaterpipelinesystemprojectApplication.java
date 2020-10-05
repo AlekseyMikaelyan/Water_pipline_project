@@ -1,6 +1,9 @@
 package com.example.waterpipelinesystemproject;
 
 import com.example.waterpipelinesystemproject.service.InitDBService;
+import com.example.waterpipelinesystemproject.service.PathfinderServiceImpl;
+import com.example.waterpipelinesystemproject.service.interfaces.PathfinderService;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
@@ -12,6 +15,7 @@ public class WaterpipelinesystemprojectApplication {
 
     public static void main(String[] args) {
         SpringApplication.run(WaterpipelinesystemprojectApplication.class, args);
+
     }
 
     @Bean

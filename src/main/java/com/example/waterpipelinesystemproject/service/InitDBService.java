@@ -32,11 +32,13 @@ public class InitDBService {
     private final LocationRepository locationRepository;
     private final ConnectionRepository connectionRepository;
     private final SubProblemRepository subProblemRepository;
+    private final PathfinderService pathfinderService;
 
-    public InitDBService(LocationRepository locationRepository, ConnectionRepository connectionRepository,  SubProblemRepository subProblemRepository) {
+    public InitDBService(LocationRepository locationRepository, ConnectionRepository connectionRepository,  SubProblemRepository subProblemRepository, PathfinderService pathfinderService) {
         this.locationRepository = locationRepository;
         this.connectionRepository = connectionRepository;
         this.subProblemRepository = subProblemRepository;
+        this.pathfinderService = pathfinderService;
     }
 
     public void init() {
@@ -78,6 +80,9 @@ public class InitDBService {
         createConnection(connections);
         createProblem(problems);
         logger.info("Insert data from csv files to dataBase");
+
+        createSolution();
+        logger.info("Create solution in Solution table");
 
     }
 
@@ -127,5 +132,11 @@ public class InitDBService {
                 logger.info("Create problems in problem table");
             }
         }
+    }
+
+    private void createSolution() {
+        Problem problem = pathfinderService.load();
+        List<Problem.Solution> solutions = problem.solve();
+        pathfinderService.consume(solutions);
     }
 }
